@@ -5,9 +5,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.awt.image.BufferedImageOp;
-import java.awt.image.ConvolveOp;
-import java.awt.image.Kernel;
+
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -26,8 +24,6 @@ public class Main {
     }
 
     public static void konvolusi(int[][] Image, int[][] ImageResult, int[][] Mask,int N, int M){
-        //Mengkonvolusi citra Image yang berukuran N M dengan mask 3 - 3 .
-        // Hasil konvolusi disimpan di dalam matriks ImageResult .
         int pembagi = 0;
         for (int i = 0; i < Mask.length; i++) {
             for (int j = 0; j < Mask[0].length; j++) {
